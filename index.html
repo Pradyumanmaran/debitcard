@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card_fronPart ">
+        <div class="card_frame">
+          <div class="card_type">
+            <img alt class="cardLogo" src="./assets/22.svg" />
+          </div>
+          <div class="chip img">
+            <img alt class="card_chip" src="./assets/sim-card-chip.png" />
+            <img
+              alt
+              class="card_wifi"
+              src="./assets/contactless-payment-white.png"
+            />
+          </div>
+          <p class="cardNumber" id="card_number">**** **** **** ****</p>
+          <div class="cardHolderName">
+            <div>
+              <span>CARD HOLDER</span>
+              <p class="card_info" id="card-info-name">YOUR NAME HERE</p>
+            </div>
+            <div>
+              <span>Expires</span>
+              <p class="card_info" id="card-info-expire">**/**</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardback">
+        <div class="card_back_content">
+          <div><div class="blackLine">
+            xgfsggf
+          </div></div>
+          <div class="cvv_space">
+            <div class="white_line">sddsf</div>
+            <div class="cvv_content">****</div>
+          </div>
+        </div>
+      </div>
+      <form>
+        <div>
+          <label>Card holder:</label>
+          <input
+            type="text"
+            id="ccname"
+            class="cardHolderNameIN"
+            placeholder="Card holder name"
+          />
+        </div>
+        <div>
+          <label>Card number:</label>
+          <input
+            type="text"
+            id="chNumber"
+            class="cardHolderNameIN"
+            placeholder="Card number"
+            maxlength="19"
+          />
+        </div>
+        <div class="expires_cvc">
+          <div>
+            <label>Expires:</label>
+            <input
+              type="text"
+              class="cardHolderNameIN"
+              placeholder="Expires"
+              id="cardExperiesInput"
+            />
+          </div>
+          <div>
+            <label>CVC:</label>
+            <input type="text" class="cardHolderNameIN" placeholder="CVC"
+            id="cvc_input" maxlength="4" />
+          </div>
+        </div>
+      </form>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

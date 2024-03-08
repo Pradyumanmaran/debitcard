@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  min-height: 100vh;
+
+  background: linear-gradient(
+    to right top,
+    #a2beeb,
+    #8ecfee,
+    #8edde5,
+    #a4e7d5,
+    #c7eec7
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+    /* width: 320px;  */
+    /* height: 600px;   */
+
+  background-color:none;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  perspective: 1000px;
+  position: relative;
+
+}
+.card_frame {
+  background-image: url(https://www.digitaldesignjournal.com/wp-content/uploads/2018/07/Programming-World-Map-Wallpaper.jpg),
+    linear-gradient(
+      to right bottom,
+      #fd696b,
+      #fa616e,
+      #f65871,
+      #f15075,
+      #ec4879
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 190px; */
+  /* width: 320px; */
+ padding: 20px;
+ border-radius: 8px;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ backface-visibility: hidden;
+ transform:perspective(1000px) rotateY(0deg);
+ transition: 4s ease-out;
+ /* transition: 2s ease-in;
+ transform: rotateY('-180'); */
+ 
+}
+.card_type{
+  display: flex;
+  justify-content: end;
+}
+.card_chip{
+  border-radius: 5px;
+  height: 40px;
+  
+}
+.card_wifi{
+  border-radius: 5px;
+  height: 40px
+
+}
+.cardLogo{
+  width: 50px;
+}
+/* .change{
+  display: none;
+} */
+#card_number {
+  display: block;
+  width: 100%;
+  word-spacing: 4px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  
+}
+.card_info{
+  color:#fff;
+}
+.cardHolderName{
+  display: flex;
+  justify-content: space-between;
+
+}
+.cardHolderName span{
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+.cardHolderName div{
+  padding-right: 10px;
+
+}
+form div label{
+  font-size: 11px;
+  font-weight: bold;
+}
+input {
+  /* width: 100%; */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-shadow: none;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.expires_cvc{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.card_fronPart{
+  position: relative;
+  backface-visibility: hidden;
+ /* transform:perspective(1000px) rotateY(0deg);
+ transition: 4s ease-out; */
+}
+.cardback{
+  position: absolute;
+  /* display: block; */
+  background-image: url(https://www.digitaldesignjournal.com/wp-content/uploads/2018/07/Programming-World-Map-Wallpaper.jpg),
+  linear-gradient(
+    to right bottom,
+    #fd696b,
+    #fa616e,
+    #f65871,
+    #f15075,
+    #ec4879
+  );
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+ height: 188.41px; 
+ width: 368.67px; 
+/* padding: 20px; */
+border-radius: 8px;
+backface-visibility: hidden;
+transform:perspective(1000px) rotateY(180deg);
+transition:.4s ease-out
+
+}
+.card_back_content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* padding: 10px; */
+}
+
+.blackLine {
+  background-color: rgb(118, 118, 118);
+  height: 40px; /* Set the desired height */
+  width: 368.67px; /*Ensure the black line spans the entire width */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  padding: 10px; /* Adjust the padding as needed */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+   margin-top: 25px; /*Adjust the margin as needed */
+}
+.white_line{
+  background-color: #fa616e;
+  height: 40px;
+  width: 250px ;
+  border-radius: 5px;
+}
+.cvv_space{
+  display: flex;
+  padding-left: 45px;
+  
+}
+.cvv_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 50px;
+  color: black;
+  background-color: #fff;
+  margin-top: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.sample{
+  /* position: absolute; */
+  z-index: 8999;
+
+}
+
